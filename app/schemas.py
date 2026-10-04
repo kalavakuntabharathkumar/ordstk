@@ -28,3 +28,5 @@ class OrderOut(BaseModel):
     customer_name: str
     status: str
     total: float
+
+# Schemas enforce API boundaries before persistence.

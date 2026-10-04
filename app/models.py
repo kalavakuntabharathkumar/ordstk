@@ -34,3 +34,5 @@ class OrderItem(Base):
     quantity: Mapped[int] = mapped_column(Integer)
     unit_price: Mapped[float] = mapped_column(Float)
     order: Mapped[Order] = relationship(back_populates="items")
+
+# Core entities: users, products, orders, and order lines.

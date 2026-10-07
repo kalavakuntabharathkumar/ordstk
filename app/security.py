@@ -33,3 +33,5 @@ def require_roles(*roles):
             raise HTTPException(status_code=403, detail="Insufficient role")
         return user
     return dependency
+
+# Role checks are dependencies shared by protected routes.

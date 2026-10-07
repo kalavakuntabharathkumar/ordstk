@@ -104,3 +104,5 @@ def update_order_status(order_id: int, new_status: str, db: Session = Depends(ge
     order.status = new_status
     db.commit(); db.refresh(order)
     return order
+
+# Route layer keeps validation and persistence flow explicit.

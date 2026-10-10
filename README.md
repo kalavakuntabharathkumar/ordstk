@@ -31,3 +31,6 @@ Install a PostgreSQL driver such as `psycopg[binary]` when using PostgreSQL.
 
 ## Important security note
 The compact HMAC token in `app/security.py` is intentionally a self-contained demo so the project runs with minimal dependencies. For production, replace it with a vetted JWT implementation, use proper password hashing and user persistence, move secrets to a secret manager, and enforce transaction/locking strategy for concurrent stock updates. `demo-login` is for local development only.
+
+## API overview
+The interactive OpenAPI schema is available at `/docs`; health check is `/health`.
